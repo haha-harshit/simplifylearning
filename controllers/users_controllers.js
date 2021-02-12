@@ -2,12 +2,16 @@
 
 // user's DASHBOARD
 module.exports.dashboard = function(req, res){
-    return res.end('<h1>This is your classroom!')
-}
+    return res.render('dashboard', {
+        title: 'SimplifyLearning | Dashboard'
+    });
+};
 
 
 // user's profile
 module.exports.profile = function(req, res){
-    return res.end('<h1>Your Profile Page!</h1>')
+    return res.render('profile', {
+        title: 'SimplifyLearning | Your Profile'
+    });
 };
 
